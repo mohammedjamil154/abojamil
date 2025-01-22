@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز أدوات الذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="mo.css">
+</head>
+<body>
+    <header>
+        <h1>مرحباً بك في مركز أدوات الذكاء الاصطناعي</h1>
+        <p>وصول سريع إلى منصات الذكاء الاصطناعي المفضلة لديك</p>
+    </header>
+    <main>
+        <section class="buttons-container">
+            <div class="row">
+                <!-- الصف الأول -->
+                <div class="tool-card" style="--card-index: 0;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT Logo" class="site-logo">
+                    <h2>إنشاء المحادثات</h2>
+                    <button class="ai-button" onclick="redirectTo('https://chat.openai.com')">ChatGPT</button>
+                </div>
+                <div class="tool-card" style="--card-index: 1;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Midjourney_Emblem.png" alt="Midjourney Logo" class="site-logo">
+                    <h2>إنشاء الصور</h2>
+                    <button class="ai-button" onclick="redirectTo('https://www.midjourney.com')">MidJourney</button>
+                </div>
+                <div class="tool-card" style="--card-index: 2;">
+                    <img src="https://seeklogo.com/images/G/google-bard-logo-2D24045D5C-seeklogo.com.png" alt="Google AI Logo" class="site-logo">
+                    <h2>شرح مستندات</h2>
+                    <button class="ai-button" onclick="redirectTo('https://notebooklm.google/')">not ai</button>
+                </div>
+                <div class="tool-card" style="--card-index: 3;">
+                    <img src="https://claude.ai/favicon.ico" alt="Claude Logo" class="site-logo">
+                    <h2>Claude AI</h2>
+                    <button class="ai-button" onclick="redirectTo('https://claude.ai')">Claude</button>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- الصف الثاني -->
+                <div class="tool-card" style="--card-index: 4;">
+                    <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg" alt="Gemini Logo" class="site-logo">
+                    <h2>Gemini</h2>
+                    <button class="ai-button" onclick="redirectTo('https://gemini.google.com')">Gemini</button>
+                </div>
+                <div class="tool-card" style="--card-index: 5;">
+                    <img src="https://placehold.co/100x100?text=AI" alt="Coming Soon" class="site-logo">
+                    <h2>مربع إضافي 1</h2>
+                    <button class="ai-button" onclick="redirectTo('#')">قريباً</button>
+                </div>
+                <div class="tool-card" style="--card-index: 6;">
+                    <img src="https://placehold.co/100x100?text=AI" alt="Coming Soon" class="site-logo">
+                    <h2>مربع إضافي 2</h2>
+                    <button class="ai-button" onclick="redirectTo('#')">قريباً</button>
+                </div>
+                <div class="tool-card" style="--card-index: 7;">
+                    <img src="https://placehold.co/100x100?text=AI" alt="Coming Soon" class="site-logo">
+                    <h2>مربع إضافي 3</h2>
+                    <button class="ai-button" onclick="redirectTo('#')">قريباً</button>
+                </div>
+            </div>
+        </section>
+        <div class="scroll-indicators">
+            <span class="scroll-dot active"></span>
+            <span class="scroll-dot"></span>
+            <span class="scroll-dot"></span>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; جميع الحقوق محفوضة باسم محمد جميل </p>
+        <a href="https://www.instagram.com/cvcons/" class="social-link" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" 
+                 alt="Instagram" 
+                 class="instagram-icon">
+            <span>تابعني على انستجرام</span>
+        </a>
+    </footer>
+    <script src="mo.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (window.innerWidth <= 768) {
+            const rows = document.querySelectorAll('.row');
+            
+            rows.forEach(row => {
+                const cards = row.querySelectorAll('.tool-card');
+                
+                // تحديث المربع النشط عند التمرير
+                const updateActiveCard = () => {
+                    const rowRect = row.getBoundingClientRect();
+                    const rowCenter = rowRect.left + row.offsetWidth / 2;
+                    
+                    let closestCard = null;
+                    let minDistance = Infinity;
+                    
+                    cards.forEach(card => {
+                        const cardRect = card.getBoundingClientRect();
+                        const cardCenter = cardRect.left + card.offsetWidth / 2;
+                        const distance = Math.abs(cardCenter - rowCenter);
+                        
+                        if (distance < minDistance) {
+                            minDistance = distance;
+                            closestCard = card;
+                        }
+                        
+                        card.classList.remove('active');
+                    });
+                    
+                    if (closestCard) {
+                        closestCard.classList.add('active');
+                    }
+                };
+                
+                row.addEventListener('scroll', () => {
+                    requestAnimationFrame(updateActiveCard);
+                });
+                
+                updateActiveCard();
+            });
+        }
+    });
+    </script>
+</body>
+</html>
