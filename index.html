@@ -13,112 +13,130 @@
     </header>
     <main>
         <section class="buttons-container">
-            <div class="row">
-                <!-- الصف الأول -->
-                <div class="tool-card" style="--card-index: 0;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT Logo" class="site-logo">
+            <div class="tool-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1024px-ChatGPT_logo.svg.png" alt="ChatGPT Logo" class="site-logo">
+                <div class="card-content">
                     <h2>إنشاء المحادثات</h2>
-                    <button class="ai-button" onclick="redirectTo('https://chat.openai.com')">ChatGPT</button>
-                </div>
-                <div class="tool-card" style="--card-index: 1;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Midjourney_Emblem.png" alt="Midjourney Logo" class="site-logo">
-                    <h2>إنشاء الصور</h2>
-                    <button class="ai-button" onclick="redirectTo('https://www.midjourney.com')">MidJourney</button>
-                </div>
-                <div class="tool-card" style="--card-index: 2;">
-                    <img src="https://seeklogo.com/images/G/google-bard-logo-2D24045D5C-seeklogo.com.png" alt="Google AI Logo" class="site-logo">
-                    <h2>شرح مستندات</h2>
-                    <button class="ai-button" onclick="redirectTo('https://notebooklm.google/')">not ai</button>
-                </div>
-                <div class="tool-card" style="--card-index: 3;">
-                    <img src="https://claude.ai/favicon.ico" alt="Claude Logo" class="site-logo">
-                    <h2>Claude AI</h2>
-                    <button class="ai-button" onclick="redirectTo('https://claude.ai')">Claude</button>
+                    <p class="card-description">مساعد ذكي للمحادثة والكتابة الإبداعية والبرمجة</p>
+                    <button class="ai-button" onclick="redirectTo('https://chat.openai.com')">
+                        ChatGPT
+                        <svg class="star-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+                            <path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"/>
+                        </svg>
+                        <svg class="star-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+                            <path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"/>
+                        </svg>
+                        <svg class="star-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+                            <path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"/>
+                        </svg>
+                        <svg class="star-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+                            <path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"/>
+                        </svg>
+                        <svg class="star-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+                            <path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"/>
+                        </svg>
+                        <svg class="star-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+                            <path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
-            
-            <div class="row">
-                <!-- الصف الثاني -->
-                <div class="tool-card" style="--card-index: 4;">
-                    <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg" alt="Gemini Logo" class="site-logo">
-                    <h2>Gemini</h2>
-                    <button class="ai-button" onclick="redirectTo('https://gemini.google.com')">Gemini</button>
+            <div class="tool-card">
+                <img src="https://soundraw.io/images/logo.svg" alt="Soundraw Logo" class="site-logo">
+                <div class="card-content">
+                    <h2>Soundraw</h2>
+                    <p class="card-description">أداة لإنشاء موسيقى أصلية باستخدام الذكاء الاصطناعي، يمكنك تخصيص النغمة، السرعة، والنمط</p>
+                    <button class="ai-button" onclick="redirectTo('https://soundraw.io')">Soundraw</button>
                 </div>
-                <div class="tool-card" style="--card-index: 5;">
-                    <img src="https://placehold.co/100x100?text=AI" alt="Coming Soon" class="site-logo">
+            </div>
+            <div class="tool-card">
+                <img src="https://leonardo.ai/favicon.ico" alt="Leonardo AI Logo" class="site-logo">
+                <div class="card-content">
+                    <h2>Leonardo AI</h2>
+                    <p class="card-description">منصة متقدمة لإنشاء وتحرير الصور باستخدام الذكاء الاصطناعي</p>
+                    <button class="ai-button" onclick="redirectTo('https://leonardo.ai')">Leonardo</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://www.synthesia.io/assets/favicon/apple-touch-icon.png" alt="Synthesia Logo" class="site-logo">
+                <div class="card-content">
+                    <h2>Synthesia</h2>
+                    <p class="card-description">إنشاء مقاطع فيديو احترافية باستخدام أفتارات واقعية</p>
+                    <button class="ai-button" onclick="redirectTo('https://www.synthesia.io')">Synthesia</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://www.deepseek.com/_next/static/media/logo.0e814912.svg" alt="DeepSeek Logo" class="site-logo">
+                <div class="card-content">
+                    <h2>DeepSeek</h2>
+                    <p class="card-description">نموذج لغوي متقدم يدعم المحادثة والبرمجة والتحليل مع قدرات متعددة</p>
+                    <button class="ai-button" onclick="redirectTo('https://chat.deepseek.com')">DeepSeek</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://assets.quizlet.com/a/j/dist/i/logo/2021/q-twilight.0ee16dc25b9172.svg" alt="Quizlet Logo" class="site-logo">
+                <div class="card-content">
+                    <h2>Quizlet</h2>
+                    <p class="card-description">أداة لإنشاء البطاقات التعليمية والمراجعة بطريقة تفاعلية، تساعد الطلاب على حفظ المعلومات بسهولة</p>
+                    <button class="ai-button" onclick="redirectTo('https://quizlet.com')">Quizlet</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://www.notion.so/front-static/logo-ios.png" alt="Notion Logo" class="site-logo">
+                <div class="card-content">
+                    <h2>Notion AI</h2>
+                    <p class="card-description">مساعد ذكي داخل تطبيق Notion يساعد في تنظيم المهام، كتابة الملاحظات، وإنشاء خطط بذكاء</p>
+                    <button class="ai-button" onclick="redirectTo('https://www.notion.so')">Notion AI</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://www.gstatic.com/lamda/images/notebook_favicon_v1.svg" alt="NotebookLM Logo" class="site-logo">
+                <div class="card-content">
+                    <h2>شرح مستندات</h2>
+                    <p class="card-description">محلل ذكي للمستندات والنصوص مع دعم كامل للغة العربية</p>
+                    <button class="ai-button" onclick="redirectTo('https://notebooklm.google/')">NotebookLM</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://placehold.co/100x100?text=AI" alt="Coming Soon" class="site-logo">
+                <div class="card-content">
                     <h2>مربع إضافي 1</h2>
+                    <p class="card-description">خدمة جديدة قادمة قريباً - ترقبوا المزيد</p>
                     <button class="ai-button" onclick="redirectTo('#')">قريباً</button>
                 </div>
-                <div class="tool-card" style="--card-index: 6;">
-                    <img src="https://placehold.co/100x100?text=AI" alt="Coming Soon" class="site-logo">
+            </div>
+            <div class="tool-card">
+                <img src="https://placehold.co/100x100?text=AI" alt="Coming Soon" class="site-logo">
+                <div class="card-content">
                     <h2>مربع إضافي 2</h2>
+                    <p class="card-description">قريباً - خدمة جديدة</p>
                     <button class="ai-button" onclick="redirectTo('#')">قريباً</button>
                 </div>
-                <div class="tool-card" style="--card-index: 7;">
-                    <img src="https://placehold.co/100x100?text=AI" alt="Coming Soon" class="site-logo">
+            </div>
+            <div class="tool-card">
+                <img src="https://placehold.co/100x100?text=AI" alt="Coming Soon" class="site-logo">
+                <div class="card-content">
                     <h2>مربع إضافي 3</h2>
+                    <p class="card-description">قريباً - خدمة جديدة</p>
                     <button class="ai-button" onclick="redirectTo('#')">قريباً</button>
                 </div>
             </div>
         </section>
-        <div class="scroll-indicators">
-            <span class="scroll-dot active"></span>
-            <span class="scroll-dot"></span>
-            <span class="scroll-dot"></span>
-        </div>
     </main>
     <footer>
         <p>&copy; جميع الحقوق محفوضة باسم محمد جميل </p>
         <a href="https://www.instagram.com/cvcons/" class="social-link" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" 
-                 alt="Instagram" 
-                 class="instagram-icon">
+            <svg class="instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+            </svg>
             <span>تابعني على انستجرام</span>
         </a>
     </footer>
-    <script src="mo.js"></script>
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        if (window.innerWidth <= 768) {
-            const rows = document.querySelectorAll('.row');
-            
-            rows.forEach(row => {
-                const cards = row.querySelectorAll('.tool-card');
-                
-                // تحديث المربع النشط عند التمرير
-                const updateActiveCard = () => {
-                    const rowRect = row.getBoundingClientRect();
-                    const rowCenter = rowRect.left + row.offsetWidth / 2;
-                    
-                    let closestCard = null;
-                    let minDistance = Infinity;
-                    
-                    cards.forEach(card => {
-                        const cardRect = card.getBoundingClientRect();
-                        const cardCenter = cardRect.left + card.offsetWidth / 2;
-                        const distance = Math.abs(cardCenter - rowCenter);
-                        
-                        if (distance < minDistance) {
-                            minDistance = distance;
-                            closestCard = card;
-                        }
-                        
-                        card.classList.remove('active');
-                    });
-                    
-                    if (closestCard) {
-                        closestCard.classList.add('active');
-                    }
-                };
-                
-                row.addEventListener('scroll', () => {
-                    requestAnimationFrame(updateActiveCard);
-                });
-                
-                updateActiveCard();
-            });
+        function redirectTo(url) {
+            window.open(url, '_blank');
         }
-    });
     </script>
+    <script src="mo.js"></script>
 </body>
 </html>
