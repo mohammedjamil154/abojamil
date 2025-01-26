@@ -2,6 +2,22 @@ function redirectTo(url) {
   window.location.href = url;
 }
 
+function switchTab(tabName) {
+    // إخفاء جميع الأقسام
+    document.getElementById('ai-section').classList.remove('active');
+    document.getElementById('movies-section').classList.remove('active');
+    document.getElementById('books-section').classList.remove('active');
+    document.getElementById('bots-section').classList.remove('active');
+    
+    // إظهار القسم المحدد
+    document.getElementById(tabName + '-section').classList.add('active');
+    
+    // تحديث حالة الأزرار
+    const buttons = document.querySelectorAll('.tab-button');
+    buttons.forEach(button => button.classList.remove('active'));
+    event.target.closest('.tab-button').classList.add('active');
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     let startX;
     let scrollLeft;

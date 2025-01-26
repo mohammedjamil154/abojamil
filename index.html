@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مركز أدوات الذكاء الاصطناعي</title>
+    <title>تيكنو - منصة الخدمات الرقمية</title>
     <link rel="stylesheet" href="mo.css">
 </head>
 <body>
+    <div class="logo-container">
+        <h1 class="brand-title">تيكنو</h1>
+        <h2 class="brand-subtitle">TECHNO</h2>
+        <p class="description">منصة متخصصة في تقديم أفضل الخدمات والأدوات الرقمية المجانية</p>
+    </div>
     <header>
-        <h1>مرحباً بك في مركز أدوات الذكاء الاصطناعي</h1>
-        <p>وصول سريع إلى منصات الذكاء الاصطناعي المفضلة لديك</p>
+        <div class="tabs-container">
+            <button class="tab-button active" onclick="switchTab('ai')">
+                <span>الذكاء الاصطناعي</span>
+            </button>
+            <button class="tab-button" onclick="switchTab('movies')">
+                <span>مواقع الأفلام</span>
+            </button>
+            <button class="tab-button" onclick="switchTab('books')">
+                <span>تحميل الكتب</span>
+            </button>
+            <button class="tab-button" onclick="switchTab('bots')">
+                <span>بوتات تيليجرام</span>
+            </button>
+        </div>
     </header>
     <main>
-        <section class="buttons-container">
+        <section id="ai-section" class="buttons-container active">
             <div class="tool-card">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1024px-ChatGPT_logo.svg.png" alt="ChatGPT Logo" class="site-logo">
                 <div class="card-content">
@@ -98,7 +115,7 @@
                 </div>
             </div>
             <div class="tool-card">
-                <img src="https://placehold.co/100x100?text=AI" alt="Coming Soon" class="site-logo">
+                    <img src="https://placehold.co/100x100?text=AI" alt="Coming Soon" class="site-logo">
                 <div class="card-content">
                     <h2>مربع إضافي 1</h2>
                     <p class="card-description">خدمة جديدة قادمة قريباً - ترقبوا المزيد</p>
@@ -106,7 +123,7 @@
                 </div>
             </div>
             <div class="tool-card">
-                <img src="https://placehold.co/100x100?text=AI" alt="Coming Soon" class="site-logo">
+                    <img src="https://placehold.co/100x100?text=AI" alt="Coming Soon" class="site-logo">
                 <div class="card-content">
                     <h2>مربع إضافي 2</h2>
                     <p class="card-description">قريباً - خدمة جديدة</p>
@@ -114,13 +131,136 @@
                 </div>
             </div>
             <div class="tool-card">
-                <img src="https://placehold.co/100x100?text=AI" alt="Coming Soon" class="site-logo">
+                    <img src="https://placehold.co/100x100?text=AI" alt="Coming Soon" class="site-logo">
                 <div class="card-content">
                     <h2>مربع إضافي 3</h2>
                     <p class="card-description">قريباً - خدمة جديدة</p>
                     <button class="ai-button" onclick="redirectTo('#')">قريباً</button>
                 </div>
             </div>
+            <div class="tool-card">
+                <img src="https://telegram.org/img/t_logo.svg" alt="Telegram Logo" class="site-logo">
+                <div class="card-content">
+                    <h2>قناة تكنو</h2>
+                    <p class="card-description">قناة متخصصة في التقنية والتكنولوجيا والذكاء الاصطناعي</p>
+                    <button class="ai-button" onclick="redirectTo('https://t.me/techno_channel')">اشترك الآن</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://telegram.org/img/t_logo.svg" alt="Telegram Logo" class="site-logo">
+                <div class="card-content">
+                    <h2>مجتمع المطورين</h2>
+                    <p class="card-description">مجموعة نشطة للمبرمجين والمطورين لتبادل الخبرات والمعرفة</p>
+                    <button class="ai-button" onclick="redirectTo('https://t.me/dev_community')">انضم الآن</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://telegram.org/img/t_logo.svg" alt="Telegram Logo" class="site-logo">
+                <div class="card-content">
+                    <h2>تحديثات تقنية</h2>
+                    <p class="card-description">آخر الأخبار والتحديثات في عالم التكنولوجيا والذكاء الاصطناعي</p>
+                    <button class="ai-button" onclick="redirectTo('https://t.me/tech_updates')">اشترك الآن</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="movies-section" class="buttons-container">
+            <div class="tool-card">
+                <img src="https://watchseries.pe/favicon.ico" alt="WatchSeries" class="site-logo">
+                <div class="card-content">
+                    <h2>WatchSeries</h2>
+                    <p class="card-description">منصة لمشاهدة الأفلام والمسلسلات مع تصنيفات حسب البلد والنوع</p>
+                    <button class="ai-button" onclick="redirectTo('https://watchseries.pe/home')">شاهد الآن</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://fmhy.net/favicon.ico" alt="FMHY" class="site-logo">
+                <div class="card-content">
+                    <h2>FMHY</h2>
+                    <p class="card-description">دليل شامل لمواقع المشاهدة والتحميل مع تحديثات مستمرة</p>
+                    <button class="ai-button" onclick="redirectTo('https://fmhy.net/downloadpiracyguide')">تصفح الدليل</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://xprime.tv/favicon.ico" alt="XPrime" class="site-logo">
+                <div class="card-content">
+                    <h2>XPrime</h2>
+                    <p class="card-description">منصة عرض أفلام ومسلسلات مع تصنيف TOP 10 للأكثر مشاهدة</p>
+                    <button class="ai-button" onclick="redirectTo('https://xprime.tv/')">شاهد الآن</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://pcmirror.cc/favicon.ico" alt="PCMirror" class="site-logo">
+                <div class="card-content">
+                    <h2>PCMirror</h2>
+                    <p class="card-description">موقع مشاهدة أفلام ومسلسلات مجاني مع جودة عالية وترجمة احترافية</p>
+                    <button class="ai-button" onclick="redirectTo('https://pcmirror.cc/home')">شاهد الآن</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://www.vidbinge.com/favicon.ico" alt="VidBinge" class="site-logo">
+                <div class="card-content">
+                    <h2>VidBinge</h2>
+                    <p class="card-description">منصة مشاهدة مجانية للأفلام والمسلسلات مع واجهة سهلة الاستخدام</p>
+                    <button class="ai-button" onclick="redirectTo('https://www.vidbinge.com/discover')">شاهد الآن</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://www.hydraflix.vip/favicon.ico" alt="HydraFlix" class="site-logo">
+                <div class="card-content">
+                    <h2>HydraFlix</h2>
+                    <p class="card-description">منصة مجانية لمشاهدة الأفلام والمسلسلات مع تصنيفات متعددة وجودة عالية</p>
+                    <button class="ai-button" onclick="redirectTo('https://www.hydraflix.vip/home/')">شاهد الآن</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://moviedb.wiki/favicon.ico" alt="MovieDB" class="site-logo">
+                <div class="card-content">
+                    <h2>MovieDB</h2>
+                    <p class="card-description">قاعدة بيانات ضخمة للأفلام مع تصنيفات متعددة وتحديثات مستمرة</p>
+                    <button class="ai-button" onclick="redirectTo('https://moviedb.wiki')">شاهد الآن</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://flixtorus.info/favicon.ico" alt="Flixtorus" class="site-logo">
+                <div class="card-content">
+                    <h2>Flixtorus</h2>
+                    <p class="card-description">موقع لمشاهدة أحدث الأفلام والمسلسلات مجاناً مع تحديثات يومية</p>
+                    <button class="ai-button" onclick="redirectTo('https://flixtorus.info/en')">شاهد الآن</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="books-section" class="buttons-container">
+            <!-- قسم الكتب فارغ جاهز للإضافة -->
+        </section>
+        
+        <section id="bots-section" class="buttons-container">
+            <div class="tool-card">
+                <img src="https://telegram.org/img/t_logo.svg" alt="Telegram Bot" class="site-logo">
+                <div class="card-content">
+                    <h2>بوت 1</h2>
+                    <p class="card-description">وصف البوت الأول</p>
+                    <button class="ai-button" onclick="redirectTo('#')">فتح البوت</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://telegram.org/img/t_logo.svg" alt="Telegram Bot" class="site-logo">
+                <div class="card-content">
+                    <h2>بوت 2</h2>
+                    <p class="card-description">وصف البوت الثاني</p>
+                    <button class="ai-button" onclick="redirectTo('#')">فتح البوت</button>
+                </div>
+            </div>
+            <div class="tool-card">
+                <img src="https://telegram.org/img/t_logo.svg" alt="Telegram Bot" class="site-logo">
+                <div class="card-content">
+                    <h2>بوت 3</h2>
+                    <p class="card-description">وصف البوت الثالث</p>
+                    <button class="ai-button" onclick="redirectTo('#')">فتح البوت</button>
+                </div>
+            </div>
+            <!-- يمكنك إضافة المزيد من البوتات هنا -->
         </section>
     </main>
     <footer>
@@ -135,6 +275,22 @@
     <script>
         function redirectTo(url) {
             window.open(url, '_blank');
+        }
+        
+        function switchTab(tabName) {
+            // إخفاء جميع الأقسام
+            document.getElementById('ai-section').classList.remove('active');
+            document.getElementById('movies-section').classList.remove('active');
+            document.getElementById('books-section').classList.remove('active');
+            document.getElementById('bots-section').classList.remove('active');
+            
+            // إظهار القسم المحدد
+            document.getElementById(tabName + '-section').classList.add('active');
+            
+            // تحديث حالة الأزرار
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => button.classList.remove('active'));
+            event.target.classList.add('active');
         }
     </script>
     <script src="mo.js"></script>
